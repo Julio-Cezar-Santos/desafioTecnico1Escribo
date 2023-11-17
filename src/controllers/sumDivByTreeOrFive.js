@@ -1,9 +1,9 @@
 const sumDivByThreeOrFive = (req, res) => {
     try {
         const num = Number(req.params.number);
-        console.log(typeof (num))
+
         if (isNaN(num) || !Number.isInteger(num) || num <= 0) {
-            return res.status(400).json({ mesagem: 'Por favor, insira um número inteiro maior que zero.' })
+            return res.status(400).json({ mensagem: 'Por favor, insira um número inteiro maior que zero.' })
         }
 
         let sum = 0;
@@ -16,7 +16,7 @@ const sumDivByThreeOrFive = (req, res) => {
 
         return res.status(200).json(`O Somatório de todos os valores inteiros divisíveis por 3 ou 5 é: ${sum}.`);
     } catch (error) {
-        return res.status(500).json({ mesagem: error.message });
+        return res.status(500).json({ mensagem: error.message });
     }
 };
 
