@@ -1,1 +1,1 @@
-# desafioTecnico1Escribo
+# Somatório de todos os valores inteiros divisíveis por 3 ou 5 menores que n.
