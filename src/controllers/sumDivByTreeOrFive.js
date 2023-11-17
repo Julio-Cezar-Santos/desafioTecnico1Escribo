@@ -14,7 +14,7 @@ const sumDivByThreeOrFive = (req, res) => {
             }
         }
 
-        return res.status(200).json(`O Somatório de todos os valores inteiros divisíveis por 3 ou 5 é: ${sum}.`);
+        return res.status(200).json({ resultado: `O Somatório de todos os valores inteiros divisíveis por 3 ou 5 é: ${sum}.` });
     } catch (error) {
         return res.status(500).json({ mensagem: error.message });
     }
