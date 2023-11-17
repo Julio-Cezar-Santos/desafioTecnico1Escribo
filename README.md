@@ -42,7 +42,7 @@ Você receberá uma resposta JSON contendo o resultado do somatório.
 
    ```json
     {
-      "mensagem": "O Somatório de todos os valores inteiros divisíveis por 3 ou 5 é: 23."
+      "resultado": "O Somatório de todos os valores inteiros divisíveis por 3 ou 5 é: 23."
     }
   ```
 
